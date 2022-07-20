@@ -1,0 +1,17 @@
+#no virtual envs.
+venv4*/
+
+#no logs.
+**/logs/*
+
+#no datasets.
+**/data/*
+
+#no snapshots.
+**/snapshots/*
+*.model
+
+
+#no python stuff.
+**/__pycache__/**
+*.pyc
