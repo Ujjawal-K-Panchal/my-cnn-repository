@@ -1,10 +1,16 @@
 # -*- coding: utf-8 -*-
 """
-Title: Main training the model. 
-	
-Created on Mon Jul 16 18:58:29 2022
+Title: CNN.
 
-@author: Ujjawal.K.Panchal
+Description: A Convolutional Neural Network.
+
+Created on Sun Jul 10 2022 19:19:01 2022.
+
+@author: Ujjawal .K. Panchal
+===
+
+Copyright (c) 2022, Ujjawal Panchal.
+All Rights Reserved.
 """
 #imports.
 import argparse, torch
@@ -16,12 +22,13 @@ import model, pipeline
 #static vars.
 LR = 1E-3
 BS = 128
-EPOCHS = 1
-DEVICE = "cuda:0" if torch.cuda.is_available() else "cpu"
+EPOCHS = 100
+DEVICE = "cpu"
 NUMCHANNELS = 1
 DATASET = "MNIST"
 SEED = 42
-SAVENAME = "MyCNN"
+MODELNAME = "MyCNN"
+SAVENAME = f"{DATASET}-{MODELNAME}"
 
 #set torch seed for determinacy.
 torch.manual_seed(42)
